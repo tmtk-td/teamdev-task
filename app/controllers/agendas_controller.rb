@@ -20,6 +20,9 @@ class AgendasController < ApplicationController
       render :new
     end
   end
+ 
+  def destroy
+  end  
 
   private
 
