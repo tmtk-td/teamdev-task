@@ -54,12 +54,12 @@ class TeamsController < ApplicationController
     if @team.update(owner_id: @assign.user.id)
       # リーダー権限を移動させ、新しく権限を付与されたユーザーにメールを送信する処理
       PassOwnerMailer.pass_owner_mail(@assign, @team).deliver
-      redirect_to team_url, notice: I18n.t('views.messages.assign_to_leader', :team => @team.name)
+      redirect_to team_url, notice: I18n.t('views.messages.assign_to_leader', team: @team.name)
     else
       # リーダー権限が移動できなかった場合の処理
       redirect_to team_url, notice: I18n.t('views.messages.cannot_assign_to_leader')
     end
-  end  
+  end
 
   private
 
