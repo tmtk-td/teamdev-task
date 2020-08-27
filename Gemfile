@@ -42,7 +42,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'rubocop'
+  gem 'rubocop', require: false
   gem 'shoulda-matchers'
   gem 'spring'
   gem 'spring-commands-rspec'
