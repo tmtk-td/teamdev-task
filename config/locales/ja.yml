@@ -212,6 +212,7 @@ ja:
       failed_to_assign: 'アサインに失敗しました！'
       cannot_delete_the_leader: 'リーダーは削除できません。'
       cannot_delete_only_a_member: 'このユーザーはこのチームにしか所属していないため、削除できません。'
+      cannot_delete_not_the_leader_or_myself: 'リーダーもしくはユーザー自身ではないため、削除できません。'
       delete_member: 'メンバーを削除しました。'
       cannot_delete_member_4_some_reason: 'なんらかの原因で、削除できませんでした。'
       failed_to_post: '投稿できませんでした...'
@@ -237,6 +238,9 @@ ja:
       team_build2: 'チームを作成する'
       select_team: 'チーム選択'
       create_agenda: 'アジェンダ作成'
+      delete_agenda: 'アジェンダを削除しました。'
+      delete_agenda_title: "アジェンダ「%{agenda}」を削除しました。"
+      cannnot_delete_agenda: '権限がないため、アジェンダを削除できませんでした。'
       input_agenda_title: 'タイトル入力'
       input_team_name: 'チーム名を入力してください'
       recent_posts: '最近投稿された記事'
@@ -251,12 +255,19 @@ ja:
       edit_profile: 'プロフィールを編集'
       team_you_belong_to: '所属しているチーム'
       posted_articles: '投稿した記事一覧'
+      cannot_edit_team_info: 'リーダー以外はチーム情報を編集できません。'
+      become_the_leader: 'リーダーに設定されました。'
+      become_the_leader_to_team: "あなたは%{team}のリーダーになりました。"
+      leader_authority_info: 'リーダーはチームメンバーの削除や編集が可能です。'
+      assign_to_leader: "%{team}のリーダーを変更しました。"
+      cannot_assign_to_leader: 'リーダーを変更できませんでした。'
     button:
       submit: '投稿'
       edit: '編集'
       delete: '削除'
       create: '作成'
       invite: '招待'
+      pass_owner: 'リーダーにする'
     top:
       line1: 'このアプリケーションは、チームごと、議題ごとに別れて'
       line2: '特定のイシュー（議題）をメンバーで見やすく共有するためのアプリケーションです'
